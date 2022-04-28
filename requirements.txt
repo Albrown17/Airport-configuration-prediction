@@ -8,5 +8,6 @@ keras == 2.6.0
 scipy == 1.8.0
 loguru == 0.5.3
 typer == 0.4.1
+tqdm == 4.62.3
 
 

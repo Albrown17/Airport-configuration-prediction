@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import datetime
 import pickle
+from tqdm import tqdm
 from joblib import load
 from pathlib import Path
 from sklearn.pipeline import Pipeline
@@ -248,7 +249,7 @@ def make_all_predictions(airport_config_df_map, airport_weather_df_map, model_di
     current_model = None
 
     grouped = predictions.groupby(["airport", "timestamp", "lookahead"], sort=False)
-    for key, pred_frame in grouped:
+    for key, pred_frame in tqdm(grouped):
         airport, timestamp, lookahead = key
         pipeline = pipeline_map[airport]
         label_enc = label_enc_map[airport]
