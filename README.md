@@ -29,7 +29,7 @@ pip install -r requirements.txt
 2) Unzip the file downloaded from the previous step and place the result in the "./src/model_assets" folder in this repository.
 3) Download the needed data from google drive here: https://drive.google.com/file/d/1SI5WfXxrN2Vbi_Mp6tK_HZ2Qw5JoTE9G/view?usp=sharing 
 4) Extract the zip file aquired from step 3 into the "./data" folder of this repository.
-5) Run the code in the ConfigPredictions envronment.
+5) Run the code in the ConfigPredictions envronment (Expect long processing time.)
 ```
 python main.py 2020-12-10
 ```
